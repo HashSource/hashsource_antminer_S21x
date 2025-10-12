@@ -1,0 +1,46 @@
+{
+    "config":
+    [
+        {
+            "miner": "H6HB70601",
+            "levels": [{
+                "frequency": 370,
+                "voltage": 1900
+            },
+			{
+                "frequency": 410,
+                "voltage": 2140
+            }]
+        },{
+            "miner": "H6HB70602",
+            "levels": [{
+                "frequency": 450,
+                "voltage": 1900
+            },
+			{
+                "frequency": 495,
+                "voltage": 2180
+            }]
+        },{
+            "miner": "H6HB70501",
+            "levels": [{
+                "frequency": 461,
+                "voltage": 1900
+            },
+			{
+                "frequency": 495,
+                "voltage": 2180
+            }]
+        },{
+            "miner": "H1HB70601",
+            "levels": [{
+                "frequency": 450,
+                "voltage": 1900
+            },
+			{
+                "frequency": 495,
+                "voltage": 2180
+            }]
+        }
+    ]
+}
