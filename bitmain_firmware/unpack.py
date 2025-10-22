@@ -108,7 +108,12 @@ def extractRarFiles(basePath: str):
 
 
 def extractBmuFiles(basePath: str):
-    bmuFiles = glob.glob(f"{basePath}/**/*.bmu", recursive=True)
+    # Handle both single files and directories
+    if os.path.isfile(basePath) and basePath.endswith(".bmu"):
+        bmuFiles = [basePath]
+    else:
+        bmuFiles = glob.glob(f"{basePath}/**/*.bmu", recursive=True)
+
     for bmuFile in bmuFiles:
         # bmuDir = os.path.dirname(bmuFile)
         extractDir = Path(bmuFile).with_suffix("")
@@ -544,23 +549,25 @@ def extractAmlSdBootPartition(basePath: str):
 if __name__ == "__main__":
     print("__main__")
 
-    basePath = "./"
+    # processPath = "./"
+    # processPath = "./FR-1.80(250924-S21-XP).bmu"
+    processPath = "./FR-1.80(250924-S21-XP)/"
 
-    # extractZipFiles(basePath)
-    # extractTarGzFiles(basePath)
-    # extractTarXzFiles(basePath)
-    # extract7zFiles(basePath)
-    # extractRarFiles(basePath)
-    # extractBmuFiles(basePath)
-    # extractBmuUpdateFiles(basePath)
-    # removeXilinxUImageHeaders(basePath)
-    # extractXilinxGzipFiles(basePath)
-    extractXilinxLinuxImages(basePath)
-    # extractAmlDatafileImages(basePath)
-    # extractBootBin(basePath)
-    # removeCVITEKHeaders(basePath)
-    # extractCVITEKGzipFiles(basePath)
-    # extractCVITEKImages(basePath)
-    # extractBeagleBoneRamFsImages(basePath)
-    # extractAmlSdImages(basePath)
-    # extractAmlSdBootPartition(basePath)
+    # extractZipFiles(processPath)
+    # extractTarGzFiles(processPath)
+    # extractTarXzFiles(processPath)
+    # extract7zFiles(processPath)
+    # extractRarFiles(processPath)
+    # extractBmuFiles(processPath)
+    # extractBmuUpdateFiles(processPath)
+    # removeXilinxUImageHeaders(processPath)
+    # extractXilinxGzipFiles(processPath)
+    # extractXilinxLinuxImages(processPath)
+    extractAmlDatafileImages(processPath)
+    # extractBootBin(processPath)
+    # removeCVITEKHeaders(processPath)
+    # extractCVITEKGzipFiles(processPath)
+    # extractCVITEKImages(processPath)
+    # extractBeagleBoneRamFsImages(processPath)
+    # extractAmlSdImages(processPath)
+    # extractAmlSdBootPartition(processPath)

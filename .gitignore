@@ -11,3 +11,6 @@ _ghidra_project
 _lib_copies
 symbols
 _decompile.log
+
+# Extra
+S21_bmminer_6060_analysis
