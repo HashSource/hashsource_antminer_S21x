@@ -551,7 +551,7 @@ if __name__ == "__main__":
 
     # processPath = "./"
     # processPath = "./FR-1.80(250924-S21-XP).bmu"
-    processPath = "./FR-1.80(250924-S21-XP)/"
+    processPath = "./Antminer-S21+Hyd.-release-202510161121"
 
     # extractZipFiles(processPath)
     # extractTarGzFiles(processPath)
@@ -562,8 +562,8 @@ if __name__ == "__main__":
     # extractBmuUpdateFiles(processPath)
     # removeXilinxUImageHeaders(processPath)
     # extractXilinxGzipFiles(processPath)
-    # extractXilinxLinuxImages(processPath)
-    extractAmlDatafileImages(processPath)
+    extractXilinxLinuxImages(processPath)
+    # extractAmlDatafileImages(processPath)
     # extractBootBin(processPath)
     # removeCVITEKHeaders(processPath)
     # extractCVITEKGzipFiles(processPath)
