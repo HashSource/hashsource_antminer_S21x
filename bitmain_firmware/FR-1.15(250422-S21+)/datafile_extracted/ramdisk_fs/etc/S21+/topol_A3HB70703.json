@@ -1,0 +1,165 @@
+{
+    "miner_type": "S21+",
+    "board_name": "A3HB70703",
+    "board_num": 3,
+    "ticketmask": 8,
+    "ccdelay": 0,
+    "pwth": 3,
+    "authentication_mode": false,
+    "uart_baud": "B3000000",
+    "pattern": {
+        "ticketmask": 4,
+        "super_mode": true,
+        "midautogen": true,
+        "capture_pattern_mode": false,
+        "capture_pattern_percent": 100,
+        "midautogen_pattern_min_boost": 3
+    },
+    "fan": {
+        "fan_num": 4,
+        "fan_max_speed": [
+            7000,
+            7000,
+            7000,
+            7000
+        ],
+        "pwm_max_limit": 100,
+        "pwm_min_limit": 20,
+        "full_speed_limit": 65,
+        "pid_target": 50,
+        "startup_duration": 600,
+        "startup_Kp": -9.0,
+        "Kp": -5.6,
+        "Ki": -0.5,
+        "Kd": 0
+    },
+    "sensor_temp": {
+        "ctrlboard_sensor_interval_ms": 1000,
+        "pcb_temp_max_limit": 80,
+        "ambient_temp_min_limit": -40,
+        "ambient_temp_max_limit": 50,
+        "failure_max_num": 6,
+        "board_sensor_num": 2,
+        "sensor_addr_high": [
+            76,
+            72
+        ]
+    },
+    "baking_board": {
+        "baking_freq": [
+            200,
+            400
+        ],
+        "baking_target_temp": [
+            20,
+            30
+        ],
+        "baking_max_time": [
+            120,
+            120
+        ]
+    },
+    "voltage_compensation": {
+        "max_temp_sensitivity": 3,
+        "min_temp_sensitivity": 1.5,
+        "compensation_ratio": 0.05
+    },
+    "freq_compensation": {
+        "temp_margin": 3,
+        "ambient_temp": [
+            40
+        ],
+        "reduce_unit": [
+            35
+        ]
+    },
+    "power": {
+        "watt_upper_limit": 4200,
+        "poweron_with_reset_high": false,
+        "is_enable_watchdog": false,
+        "max_voltage": 15.25,
+        "min_voltage": 11.75,
+        "check_voltage_interval": 15,
+        "set_voltage_step": 0.1,
+        "set_voltage_step_time_ms": 200,
+        "open_core_voltage": 13.5,
+        "low_temp_open_core_temp_start": 25,
+        "low_temp_open_core_vol_ratio": 0.023,
+        "high_temp_open_core_temp_start": 25,
+        "high_temp_open_core_vol_ratio": 0.02
+    },
+    "board": {
+        "board_asic_num": 55,
+        "board_domain_num": 11,
+        "domain_asic_num": 5
+    },
+    "sweep": {
+        "freq_up_sweep_temp_max_limit": 31,
+        "freq_up_sweep_temp_min_limit": 22,
+        "freq_up_vol_reduce_step": 0.05,
+        "pattern_num": 2,
+        "rate_lower_limit": 95,
+        "board_rate_deviation": -1.0,
+        "asic_rate_deviation": -0.8,
+        "domain_freq_diff_max_rate": 8.0,
+        "least_num": 0,
+        "little_domain_ng_max": 127,
+        "sweep_freq_flex": -25,
+        "sweep_flex_per_temp": -2,
+        "sweep_extended_range": 30,
+        "asic_done_back_step_num": 2
+    },
+    "strategy": {
+        "board_cool_gap": 3,
+        "waiting_board_cool_min_time": 30,
+        "waiting_board_cool_max_time": 300,
+        "network_max_timeout": 300,
+        "find_asic_max_retry": 3,
+        "find_asic_max_fail_num": 10,
+        "bad_asic_judging_limit_temp": 26,
+        "bad_asic_judging_times": 4,
+        "bad_asic_judging_interval": 5,
+        "bad_asic_judging_ratio": 75,
+        "bad_asic_freq_max_reduction_times": 2,
+        "bad_asic_freq_reduction_unit": 20,
+        "bad_asic_adjust_percent": 4,
+        "bad_asic_adjust_range": 3,
+        "factory_test": true,
+        "factory_test_pid_target": 54,
+        "factory_test_pid_interval": 2,
+        "factory_test_time_interval": 30,
+        "step_voltage_adjust_watt_limit": 4000,
+        "step_voltage_adjust_start": 510,
+        "step_voltage_adjust_interval": 15,
+        "freq_level_mode": false,
+        "freq_level_min": 50
+    },
+    "pt1": {
+        "find_asic_max_retry": 2,
+        "pattern_test": false,
+        "pattern_num": 1,
+        "board_rate_min": 98.0,
+        "asic_rate_min": 98.0,
+        "open_core_voltage": 11.8,
+        "fan_fixed_pwm": 100,
+        "repair_mode": false
+    },
+    "pt2": {
+        "find_asic_max_retry": 2,
+        "pt2_extended_range": 30,
+        "pt2_freq_flex": 0,
+        "scan_pattern_num": 4,
+        "rate_lower_limit": 95,
+        "board_rate_deviation": -1.0,
+        "asic_rate_deviation": -0.8,
+        "domain_freq_diff_max_rate": 8.0,
+        "asic_done_back_step_num": 2,
+        "bad_asic_rate_limit": 85,
+        "check_scan_result": false,
+        "check_pattern_num": 8,
+        "check_asic_rate_diff_max": 1,
+        "fan_fixed_pwm": 70,
+        "min_voltage": 12.5,
+        "repair_mode": false
+    }
+}

@@ -1,0 +1,47 @@
+#!/bin/sh
+
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+DAEMON=/usr/bin/cminer
+NAME=cminer
+DESC="Cminer daemon"
+
+set -e
+#set -x
+test -x "$DAEMON" || exit 0
+
+do_start() {
+    memory_size=`awk '/MemTotal/{total=$2}END{print total}' /proc/meminfo`
+    echo "board totally has ${memory_size}KB memory"
+
+	start-stop-daemon -b --start --exec $DAEMON
+}
+
+do_stop() {
+        start-stop-daemon --stop --exec $DAEMON || true
+        sleep 3
+}
+case "$1" in
+  start)
+        echo -n "Starting $DESC: "
+        do_start
+        echo "$NAME."
+        ;;
+  stop)
+        echo -n "Stopping $DESC: "
+		do_stop
+        echo "$NAME."
+        ;;
+  restart|force-reload)
+        echo -n "Restarting $DESC: "
+        do_stop
+        do_start
+        echo "$NAME."
+        ;;
+  *)
+        N=/etc/init.d/S70cminer
+        echo "Usage: $N {start|stop|restart|force-reload}" >&2
+        exit 1
+        ;;
+esac
+
+exit 0

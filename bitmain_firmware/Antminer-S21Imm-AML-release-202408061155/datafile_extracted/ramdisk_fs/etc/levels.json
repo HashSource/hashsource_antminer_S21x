@@ -1,0 +1,18 @@
+{
+	"config":
+    [
+		{
+			"miner": "IHB68601",
+			"levels": [
+				{
+					"frequency": 600,
+					"voltage": 1600
+				}, 
+				{
+					"frequency": 300,
+					"voltage": 1300
+				}
+			]
+		}
+	]
+}

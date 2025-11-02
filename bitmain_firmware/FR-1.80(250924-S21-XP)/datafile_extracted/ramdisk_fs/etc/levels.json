@@ -1,0 +1,44 @@
+{
+	"config":
+    [
+		{
+			"miner": "A3HB70501",
+			"levels": [
+				{
+					"frequency": 600,
+					"voltage": 1500
+				}, 
+				{
+					"frequency": 380,
+					"voltage": 1280
+				}
+			]
+		},
+        {
+			"miner": "A3HB70502",
+			"levels": [
+				{
+					"frequency": 600,
+					"voltage": 1500
+				}, 
+				{
+					"frequency": 380,
+					"voltage": 1280
+				}
+			]
+		},
+		{
+			"miner": "A3HB70503",
+			"levels": [
+				{
+					"frequency": 600,
+					"voltage": 1600
+				},
+				{
+					"frequency": 380,
+					"voltage": 1280
+				}
+			]
+		}
+	]
+}
