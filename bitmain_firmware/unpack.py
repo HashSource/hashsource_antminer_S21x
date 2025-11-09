@@ -628,7 +628,7 @@ if __name__ == "__main__":
 
     # processPath = "./"
     # processPath = "./FR-1.80(250924-S21-XP).bmu"
-    processPath = "./"
+    processPath = "./FR-1.76(251015-S21-Pro)"
 
     # extractZipFiles(processPath)
     # extractTarGzFiles(processPath)
