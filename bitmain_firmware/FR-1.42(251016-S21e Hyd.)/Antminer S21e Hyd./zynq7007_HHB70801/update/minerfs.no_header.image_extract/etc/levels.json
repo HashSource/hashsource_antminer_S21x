@@ -1,0 +1,27 @@
+{
+    "config":
+    [
+        {
+            "miner": "H6HB70801",
+            "levels": [{
+                "frequency": 500,
+                "voltage": 1700
+            },
+			{
+                "frequency": 700,
+                "voltage": 2200
+            }]
+        },
+        {
+            "miner": "H6HB70802",
+            "levels": [{
+                "frequency": 500,
+                "voltage": 1700
+            },
+			{
+                "frequency": 700,
+                "voltage": 2200
+            }]
+        }
+    ]
+}
