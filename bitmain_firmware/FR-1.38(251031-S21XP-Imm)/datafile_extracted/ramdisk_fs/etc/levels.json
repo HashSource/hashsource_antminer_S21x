@@ -1,0 +1,18 @@
+{
+	"config":
+    [
+		{
+			"miner": "M1HB70602",
+			"levels": [
+				{
+					"frequency": 750,
+					"voltage": 1600
+				}, 
+				{
+					"frequency": 380,
+					"voltage": 1280
+				}
+			]
+		}
+	]
+}
