@@ -1,0 +1,70 @@
+{
+	"config":
+    [
+		{
+			"miner": "BHB68701",
+			"levels": [
+				{
+					"frequency": 600,
+					"voltage": 1550
+				}, 
+				{
+					"frequency": 350,
+					"voltage": 1300
+				}
+			]
+		},
+		{
+			"miner": "BHB68703",
+			"levels": [
+				{
+					"frequency": 600,
+					"voltage": 1550
+				}, 
+				{
+					"frequency": 350,
+					"voltage": 1300
+				}
+			]
+		},
+		{
+			"miner": "BHB68705",
+			"levels": [
+				{
+					"frequency": 600,
+					"voltage": 1550
+				}, 
+				{
+					"frequency": 350,
+					"voltage": 1300
+				}
+			]
+		},
+		{
+			"miner": "BHB68707",
+			"levels": [
+				{
+					"frequency": 600,
+					"voltage": 1550
+				}, 
+				{
+					"frequency": 350,
+					"voltage": 1300
+				}
+			]
+		},
+		{
+			"miner": "BHB68709",
+			"levels": [
+				{
+					"frequency": 600,
+					"voltage": 1550
+				}, 
+				{
+					"frequency": 350,
+					"voltage": 1300
+				}
+			]
+		}
+	]
+}
